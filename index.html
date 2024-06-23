@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title> Weather App </title>
+  </head>
+  <body class="index">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <div class="navbar-expand-lg-Container">
+          <img src="images/weather-app.png" class=" me-2" alt="">
+          <a class="navbar-brand" href="#">Weather App</a>
+        </div> 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="liveCameras.html">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photos.html">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+ 
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+   <div class="container pt-4 pb-5 mt-5">
+    <div class=" m-auto my-3 py-1 px-2 d-flex bg-white rounded-5 animate__animated animate__fadeInDown">
+      <input type="text" class="form-control shadow-none border-0 rounded-5" id="search" placeholder="Search By City">
+      <button id="realsearch" class="btn rounded-5">Find</button>
+    </div>
+
+     <div id="currentWeather" class="currentWeather mt-4 m-auto rounded-5 shadow-lg animate__animated animate__fadeInRight">
+       
+     </div>
+     <div class="WeatherInfo mt-5 rounded-5">
+           <div id="weatherInfo" class="row g-4">
+
+     </div>
+     </div>
+   </div>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
